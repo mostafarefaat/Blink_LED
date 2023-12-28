@@ -9,12 +9,13 @@ Project File Date:  12/27/2023
 <h2>Output:</h2>
 Build target 'Target 1'
 linking...
-Program Size: Code=12436 RO-data=808 RW-data=40 ZI-data=656  
+Program Size: Code=12560 RO-data=808 RW-data=40 ZI-data=656  
 ".\Blink_LED.axf" - 0 Error(s), 0 Warning(s).
 </pre>
 </body>
 </html>
-\GPTM\GPTM.c(41): warning:  #1134-D: literal treated as "long long"
+PTM.c...
+..\..\MCAL\GPTM\GPTM.c(41): warning:  #1134-D: literal treated as "long long"
         else if((max_ticks <= 4294967295) && (concate != NULL) )
 ..\..\MCAL\GPTM\GPTM.c(48): warning:  #1134-D: literal treated as "long long"
                 ( (max_ticks <= 4294967295)?  (BitConfigType = TIMER_32) : (BitConfigType = TIMER_64) );
@@ -48,24 +49,13 @@ compiling MCU.c...
   static STR_RELOAD_TYPE reload_value = 0;
 ..\..\MCAL\MCU\MCU.c: 1 warning, 0 errors
 linking...
-Program Size: Code=12436 RO-data=808 RW-data=40 ZI-data=656  
+Program Size: Code=12560 RO-data=808 RW-data=40 ZI-data=656  
 ".\Blink_LED.axf" - 0 Error(s), 14 Warning(s).
- long"
-                else {prescale = 0;  value = ceil((Value * MAX_TICKS_32bit )/(MAX_DELAY_32bit));}
-..\..\MCAL\GPTM\GPTM.c: 12 warnings, 1 error
-compiling INTCtrl.c...
-..\..\MCAL\INT_CTRL\..\GPIO\..\MCU\MCU.h(79): error:  #147-D: declaration is incompatible with "void Sys_Timer_delay(void)" (declared at line 78)
-   void Sys_Timer_delay(uint32_t ticks);
-..\..\MCAL\INT_CTRL\INTCtrl.c(117): warning:  #177-D: function "IntCtrl_DisableInterrupt" was declared but never referenced
-  static void IntCtrl_DisableInterrupt(IntCtrl_InterruptType Int_Num)
-..\..\MCAL\INT_CTRL\INTCtrl.c: 1 warning, 1 error
-compiling MCU.c...
-..\..\MCAL\MCU\Mcu.h(79): error:  #147-D: declaration is incompatible with "void Sys_Timer_delay(void)" (declared at line 78)
-   void Sys_Timer_delay(uint32_t ticks);
-..\..\MCAL\MCU\MCU.c(48): error:  #165: too few arguments in function call
-        Sys_Timer_delay();
-..\..\MCAL\MCU\MCU.c(85): error:  #147-D: declaration is incompatible with "void Sys_Timer_delay(uint32_t)" (declared at line 78 of "..\..\MCAL\MCU\Mcu.h")
-  void Sys_Timer_delay(void)
-..\..\MCAL\MCU\MCU.c: 0 warnings, 3 errors
-".\Blink_LED.axf" - 8 Error(s), 13 Warning(s).
+oad_value = 0;
+..\..\MCAL\MCU\MCU.c: 1 warning, 0 errors
+linking...
+Program Size: Code=12436 RO-data=808 RW-data=40 ZI-data=656  
+".\Blink_LED.axf" - 0 Error(s), 15 Warning(s).
+
+".\Blink_LED.axf" - 2 Error(s), 14 Warning(s).
 Target not created

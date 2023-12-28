@@ -434,6 +434,18 @@
         </Group>
         <Group>
           <GroupName>HAL</GroupName>
+          <Files>
+            <File>
+              <FileName>led.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\HAL\LED\led.c</FilePath>
+            </File>
+            <File>
+              <FileName>led.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\HAL\LED\led.h</FilePath>
+            </File>
+          </Files>
         </Group>
         <Group>
           <GroupName>MCAL</GroupName>

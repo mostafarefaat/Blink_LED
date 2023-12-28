@@ -5,6 +5,7 @@
 #include "..\MCAL\INT_CTRL\INTCtrl.h"
 #include "..\MCAL\MCU\MCU.h"
 #include "..\MCAL\GPTM\GPTM.h"
+#include "..\HAL\LED\led.h"
 #include "math.h"
 
 /*-----------LOCAL MACROS-----------*/

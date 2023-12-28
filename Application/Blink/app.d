@@ -6,4 +6,5 @@
 .\app.o: ..\..\MCAL\GPIO\..\MCU\MCU.h
 .\app.o: ..\..\MCAL\INT_CTRL\INTCtrl.h
 .\app.o: ..\..\MCAL\GPTM\GPTM.h
+.\app.o: ..\..\HAL\LED\led.h
 .\app.o: C:\Keil\ARM\ARMCC\bin\..\include\math.h

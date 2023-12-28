@@ -91,7 +91,7 @@ void App_run(void)
 	
 	      Sys_Timer_delay(ceil( (Timer_On_sec) / ((SysTick_scale)) ));
 			
-				/*Gpt_StartTimer(TIMER1_16_32, TIMERA, Timer_On_sec * 1000);*/
+				/*Gpt_StartTimer(TIMER1_16_32, TIMERA, Timer_On_sec * 1000);*/ /*Due to Simulation limitations you can use this timer up to 1sec (1000ms) max*/
 			
 				/*Gpt_StartTimer(TIMER1_16_32, TIMERA, Timer_Off_sec * 1000);*/
 		}
@@ -136,7 +136,8 @@ void SysTick_Driver_Handler(void)
 {
 		//RESET CURRENT VALUE IN STCURRENT REGISTER AND TO CLEAR COUNT FLAG
 	Dio_Write_Port(&(STCURRENT), CURRENT_VALUE_RESET);
-	Dio_Toggle_Pin(&(GPIODATA(PORTF)),PIN1);
+	Led_Toggle(PORTF, PIN1);
+	//Dio_Toggle_Pin(&(GPIODATA(PORTF)),PIN1);
     /*Write code here*/
 	SYS_TICK_INT_SERVED = 1;
 	

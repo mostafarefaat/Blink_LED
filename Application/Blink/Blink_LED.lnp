@@ -2,6 +2,7 @@
 ".\startup_tm4c123.o"
 ".\main.o"
 ".\app.o"
+".\led.o"
 ".\dio.o"
 ".\gpio.o"
 ".\gptm.o"
