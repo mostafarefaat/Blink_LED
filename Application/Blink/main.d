@@ -1,0 +1,9 @@
+.\main.o: main.c
+.\main.o: ..\App.h
+.\main.o: ..\..\MCAL\GPIO\GPIO.h
+.\main.o: ..\..\MCAL\GPIO\..\DIO\Dio.h
+.\main.o: ..\..\MCAL\GPIO\..\DIO\..\TYPES\types.h
+.\main.o: ..\..\MCAL\GPIO\..\MCU\MCU.h
+.\main.o: ..\..\MCAL\INT_CTRL\INTCtrl.h
+.\main.o: ..\..\MCAL\GPTM\GPTM.h
+.\main.o: C:\Keil\ARM\ARMCC\bin\..\include\math.h
